@@ -1,5 +1,5 @@
-# orangepi_PC_gpio_pyH3
-python control orangepi_PC ext GPIO ALLwinner H3  base on  pyA20 0.2.1
+# nanopi_duo_gpio_pyH3
+python control of NanoPi-Duo GPIO (Allwinner H3) base on pyA20 0.2.1
 
 
 open source   modified  base on  pyA20 
@@ -14,9 +14,6 @@ install ::
 	python setup.py install 
 
 
-
-author :duxingkei chow
-email :277563381@qq.com
 
 
 
