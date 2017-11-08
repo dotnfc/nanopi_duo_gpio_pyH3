@@ -14,7 +14,6 @@ if not os.getegid() == 0:
 from time import sleep
 from pyA20.gpio import gpio
 from pyA20.gpio import port
-#//BY CHOW
 from pyA20.gpio import connector
 
 __author__ = "Stefan Mavrodiev"
@@ -26,12 +25,12 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-# 
+#
 """
 */  {"LED",
         {
             {   "POWER_LED",  SUNXI_GPL(10),  1   },
-            {   "STATUS_LED",  SUNXI_GPA(15),  2   },
+            {   "STATUS_LED",  SUNXI_GPA(10),  2   },
 """
 #led = connector.LEDp1    # This is the same as port.POWER_LED
 led = connector.LEDp2    # This is the same as port.STATUS_LED
