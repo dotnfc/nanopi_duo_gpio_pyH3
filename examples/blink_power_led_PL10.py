@@ -25,17 +25,9 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-#
-"""
-*/  {"LED",
-        {
-            {   "POWER_LED",  SUNXI_GPL(10),  1   },
-            {   "STATUS_LED",  SUNXI_GPA(10),  2   },
-"""
 #led = connector.LEDp1    # This is the same as port.POWER_LED
-led = connector.LEDp2    # This is the same as port.STATUS_LED
-#led = port.POWER_LED
-#led = port.STATUS_LED
+#led = connector.LEDp2    # This is the same as port.STATUS_LED
+led = port.POWER_LED
 
 gpio.init()
 gpio.setcfg(led, gpio.OUTPUT)
