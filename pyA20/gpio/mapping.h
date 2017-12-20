@@ -42,70 +42,26 @@ typedef struct _gpio {
 
 
 gpio_t gpio[] = {
-
-    /*
-    #define PIN_PG0		SUNXI_GPG(0)
-
-*/  {"gpio1",
+    {"gpio1",
         {
-            {   "PA12",  SUNXI_GPA(12),  3   },
-            {   "PA11",  SUNXI_GPA(11),  5   },
-            {   "PA6",  SUNXI_GPA(6),  7   },
- /*
- thanks  nopnop2002 
- /orangepi_PC_gpio_pyH3/pyA20/gpio/mapping.h
-
-It is a mistake.
-{ "PA0", SUNXI_GPA(0), 11 },
-{ "PA1", SUNXI_GPA(1), 13 },
-
-It is right.
-{ "PA1", SUNXI_GPA(1), 11 },
-{ "PA0", SUNXI_GPA(0), 13 },
-
-sorry My poor English
-
-
-            {   "PA0",  SUNXI_GPA(0),   11 },
-            {   "PA1",  SUNXI_GPA(1),   13   },
-            
- */           
-            {   "PA1",  SUNXI_GPA(1),   11 },
-            {   "PA0",  SUNXI_GPA(0),   13   },
-
-            {   "PA3",  SUNXI_GPA(3),   15   },
-            {   "PC0",  SUNXI_GPC(0),   19   },           
-	    {   "PC1",  SUNXI_GPC(1),  21   },
-            {   "PC2",  SUNXI_GPC(2),  23   },
-            {   "PA19",  SUNXI_GPA(19),  27   },
-            {   "PA7",  SUNXI_GPA(7),   29 },
-            {   "PA8",  SUNXI_GPA(8),   31   },
-            {   "PA9",  SUNXI_GPA(9),   33   },
-            {   "PA10",  SUNXI_GPA(10),   35   },
-            {   "PA20",  SUNXI_GPA(20),  37  },
-//
-            {   "PA13",  SUNXI_GPA(13),  8   },
-            {   "PA14",  SUNXI_GPA(14),  10  },
-            {   "PD14",  SUNXI_GPD(14),   12 },
-            {   "PC4",  SUNXI_GPC(4),   16   },
-            {   "PC7",  SUNXI_GPC(7),   18   },
-            {   "PA2",  SUNXI_GPA(2),   22   },
-            {   "PC3",  SUNXI_GPC(3),  24   },
-            {   "PA21",  SUNXI_GPA(21),  26   },
-            {   "PA18",  SUNXI_GPA(18),  28  },
-            {   "PG8",  SUNXI_GPG(8),   32 },
-            {   "PG9",  SUNXI_GPG(9),   36   },
-            {   "PG6",  SUNXI_GPG(6),   38   },
-            {   "PG7",  SUNXI_GPG(7),   40   },
+            {   "PG6",  SUNXI_GPG(6),  11   },		// TX1 = UART1 TX
+            {   "PG7",  SUNXI_GPG(7),  13   },		// RX1 = UART1 RX
+            {   "PA15", SUNXI_GPA(15), 15   },		// SPI1-MOSI
+            {   "PA16", SUNXI_GPA(16), 17   },		// SPI1-MISO
+            {   "PA14", SUNXI_GPA(14), 19   },		// SPI1-CLK
+            {   "PA13", SUNXI_GPA(13), 21   },		// SPI1-CS
+            {   "PA12", SUNXI_GPA(12), 23   },          // I2C0-SDA
+	    {   "PA11", SUNXI_GPA(11), 25   },		// I2C0-SCL
+            {   "PA4",  SUNXI_GPA(4),  27   },		// DTX = UART0 TX debug
+            {   "PA5",  SUNXI_GPA(5),  29   },		// DRX = UART0 RX debug
+            {   "PG11", SUNXI_GPG(11), 22   },		// GPIO G11
+            {   "PL11", SUNXI_GPL(11), 24   },		// IRRX
             {
                 {   0,  0,  0}
             },
         }
     },
-  /*
-    #define PIN_PG0		SUNXI_GPG(0)
-
-*/  {"LED",
+    {"LED",
         {
             {   "POWER_LED",  SUNXI_GPL(10),  1   },
             {   "STATUS_LED",  SUNXI_GPA(10),  2   },
