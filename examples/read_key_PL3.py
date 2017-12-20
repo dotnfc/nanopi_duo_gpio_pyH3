@@ -23,8 +23,8 @@ __version__ = "2.0"
 __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
-led = port.PA10			# Status-LED
-button = port.PL3		# button
+led = port.STATUS_LED
+button = port.PL3
 
 """Init gpio module"""
 gpio.init()
