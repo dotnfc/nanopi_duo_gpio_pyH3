@@ -23,8 +23,8 @@ __version__ = "2.0"
 __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
-led = connector.gpio1p38    # This is the same as port.PH2
-button = connector.gpio1p40  #CHOW
+led = port.PA10			# Status-LED
+button = port.PL3		# button
 
 """Init gpio module"""
 gpio.init()

@@ -24,7 +24,7 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-led = port.PG6
+led = port.PA10
 
 gpio.init()
 gpio.setcfg(led, gpio.OUTPUT)
