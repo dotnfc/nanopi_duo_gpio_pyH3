@@ -56,7 +56,7 @@ gpio_t gpio[] = {
             {   "PA5",  SUNXI_GPA(5),  29   },		// DRX = UART0 RX debug
             {   "PG11", SUNXI_GPG(11), 22   },		// GPIO G11
             {   "PL11", SUNXI_GPL(11), 24   },		// IRRX
-            {   "PL4",  SUNXI_GPL(4),  26   },		// BUTTON
+            {   "PL3",  SUNXI_GPL(3),  26   },		// BUTTON
             {
                 {   0,  0,  0}
             },
