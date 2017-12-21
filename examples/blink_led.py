@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Basic blinking led example.
 
-The led on A20-OLinuXino-MICRO  blinks with rate of 1Hz like "heartbeat".
+blinks a LED connected to GPIO PG11
 """
 
 import os
@@ -24,7 +24,7 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-led = port.PA12
+led = port.PG11
 
 gpio.init()
 gpio.setcfg(led, gpio.OUTPUT)

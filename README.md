@@ -28,12 +28,14 @@ https://pypi.python.org/pypi/pyA20
 	PG11 	GPIO G11
 	PL11 	IRRX, IrDa RX
 
-# LEDs mappimg
+# LEDs mapping (based on schematics)
 
-	POWER_LED,  SUNXI_GPL(10),  1   },
-	STATUS_LED,  SUNXI_GPA(10),  2   },
+	PL10	Power LED
+	PA10	Status LED
 
+# Button mapping (based on schematics)
 
+	PL3	Button
 
 # GPIO METHODS
 
@@ -55,29 +57,6 @@ The available constants are:
     OUTPUT      ->      1
     PULLUP      ->      1
     PULLDOWN    ->      2
-
-
-The gpio are named two ways:
-
-    By port name: PH0, PG2, PE10, etc.
-    These can be imported from port module:
-
-    >>> from pyA20.gpio import port
-    >>> dir(port)
-
-    By connector name and pin number: gpio2p12, gpio3p8, lcdp18, uext1p3 and etc.
-    These can be imported from connector module:
-
-    >>> from pyA20.gpio import connector
-    >>> dir(connector)
-
-Generally these constants are just an offset in the memory from the base GPIO address, so they can
-be assigned to a number type variable.
-
-    >>> led = port.PH2
-    >>> print led
-    226
-
 
 
 # I2C METHODS

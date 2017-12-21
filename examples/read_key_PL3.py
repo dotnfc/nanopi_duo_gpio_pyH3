@@ -34,8 +34,8 @@ gpio.setcfg(led, gpio.OUTPUT)
 gpio.setcfg(button, gpio.INPUT)
 
 """Enable pullup resistor"""
-gpio.pullup(button, gpio.PULLUP)
-#gpio.pullup(button, gpio.PULLDOWN)     # Optionally you can use pull-down resistor
+#gpio.pullup(button, gpio.PULLUP)
+gpio.pullup(button, gpio.PULLDOWN)     # Optionally you can use pull-down resistor
 state =1
 value_out = 1
 try:
