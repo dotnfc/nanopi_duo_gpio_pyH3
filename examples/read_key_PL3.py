@@ -24,7 +24,7 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 led = port.STATUS_LED
-button = port.PL3
+button = port.PL4
 
 """Init gpio module"""
 gpio.init()
@@ -34,8 +34,8 @@ gpio.setcfg(led, gpio.OUTPUT)
 gpio.setcfg(button, gpio.INPUT)
 
 """Enable pullup resistor"""
-#gpio.pullup(button, gpio.PULLUP)
-gpio.pullup(button, gpio.PULLDOWN)     # Optionally you can use pull-down resistor
+gpio.pullup(button, gpio.PULLUP)
+#gpio.pullup(button, gpio.PULLDOWN)     # Optionally you can use pull-down resistor
 state =1
 value_out = 1
 try:
