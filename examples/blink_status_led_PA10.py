@@ -38,13 +38,5 @@ try:
         gpio.output(led, 0)
 	print "led set 0 \r\n"
         sleep(2)
-	"""
-        gpio.output(led, 1)
-        sleep(0.1)
-        gpio.output(led, 0)
-        sleep(0.1)
-
-        sleep(0.6)
-	"""
 except KeyboardInterrupt:
     print ("Goodbye.")

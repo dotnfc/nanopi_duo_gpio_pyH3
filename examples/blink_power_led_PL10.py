@@ -14,7 +14,6 @@ if not os.getegid() == 0:
 from time import sleep
 from pyA20.gpio import gpio
 from pyA20.gpio import port
-from pyA20.gpio import connector
 
 __author__ = "Stefan Mavrodiev"
 __copyright__ = "Copyright 2014, Olimex LTD"
@@ -25,8 +24,6 @@ __maintainer__ = __author__
 __email__ = "support@olimex.com"
 
 
-#led = connector.LEDp1    # This is the same as port.POWER_LED
-#led = connector.LEDp2    # This is the same as port.STATUS_LED
 led = port.POWER_LED
 
 gpio.init()
@@ -41,13 +38,5 @@ try:
         gpio.output(led, 0)
 	print "led set 0 \r\n"
         sleep(2)
-	"""
-        gpio.output(led, 1)
-        sleep(0.1)
-        gpio.output(led, 0)
-        sleep(0.1)
-
-        sleep(0.6)
-	"""
 except KeyboardInterrupt:
     print ("Goodbye.")
